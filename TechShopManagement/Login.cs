@@ -44,7 +44,7 @@ namespace TechShopManagement
                     return;
                 }
                 string id = this.txtEmployeeId.Text;
-                string pass = this.txtPassword.Text;
+                string pass = new Encryption().encrypt(this.txtPassword.Text, "6291756464");
                 var sql = "select * from EmployeeList where EmployeeId='" + id + "';";
                 DataSet dataSet = this.dba.ExecuteQuery(sql);
                 int count = dataSet.Tables[0].Rows.Count;

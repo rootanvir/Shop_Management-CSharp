@@ -13,6 +13,7 @@ namespace TechShopManagement
 {
     public partial class ControlAdminEmployee : UserControl
     {
+        
         private string GenerateEmployee()
         {
             try
@@ -122,7 +123,7 @@ namespace TechShopManagement
                 {
                     var sql = @"update EmployeeList set
                                         EmployeeId='" + this.txtEmployeeId.Text + @"',
-                                        EmployeePassword='" + this.txtPassword.Text + @"',
+                                        EmployeePassword='" +new Encryption().encrypt(this.txtPassword.Text, "6291756464") + @"',
                                         EmployeeName='" + this.txtEmployeelName.Text + @"',
                                         EmployeeRole='" + this.cmbEmployeeRole.Text + @"',
                                         JobExperience='" + this.txtJobExperience.Text + @"',
@@ -148,7 +149,7 @@ namespace TechShopManagement
                 else
                 {
                     //insert
-                    var sql = "insert into EmployeeList values('" + this.txtEmployeeId.Text + "','" + this.txtPassword.Text + "','" + this.txtEmployeelName.Text + "','" + this.cmbEmployeeRole.Text + "'," + this.txtJobExperience.Text + ",'" + this.ddpJoiningDate.Text + "','" + this.ddpDateOfBirth.Text+ "','" + this.gender + "','" + this.cmbEmployeeBloodGroup.Text + "','" + this.txtEmployeePhoneNumber.Text + "'," + Convert.ToDouble(this.txtEmployeeSalary.Text) + ",'" + this.txtEmployeeAddress.Text + "');";
+                    var sql = "insert into EmployeeList values('" + this.txtEmployeeId.Text + "','" +new Encryption().encrypt( this.txtPassword.Text,"6291756464" )+ "','" + this.txtEmployeelName.Text + "','" + this.cmbEmployeeRole.Text + "'," + this.txtJobExperience.Text + ",'" + this.ddpJoiningDate.Text + "','" + this.ddpDateOfBirth.Text+ "','" + this.gender + "','" + this.cmbEmployeeBloodGroup.Text + "','" + this.txtEmployeePhoneNumber.Text + "'," + Convert.ToDouble(this.txtEmployeeSalary.Text) + ",'" + this.txtEmployeeAddress.Text + "');";
                     var count = this.dba.ExecuteDMLQuery(sql);
 
                     if (count == 1)
@@ -277,5 +278,7 @@ namespace TechShopManagement
             DataSet ds = this.dba.ExecuteQuery(sql);
             this.dgvAdminEmployee.DataSource = ds.Tables[0];
         }
+
+
     }
 }

@@ -188,6 +188,7 @@
             // cbmSearchCustomerBy
             // 
             this.cbmSearchCustomerBy.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbmSearchCustomerBy.Enabled = false;
             this.cbmSearchCustomerBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbmSearchCustomerBy.FormattingEnabled = true;
             this.cbmSearchCustomerBy.Items.AddRange(new object[] {

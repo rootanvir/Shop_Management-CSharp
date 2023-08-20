@@ -401,6 +401,17 @@ namespace TechShopManagement
 
         private void btnPaid_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var sqql = @"select * from ProductCartList ;";
+                DataSet dstt = this.dba.ExecuteQuery(sqql);
+                if (dstt.Tables[0].Rows.Count==0)
+                {
+                    MessageBox.Show("First select at least one product");
+                    return;
+                }
+            }catch(Exception ex) { MessageBox.Show("First select at least one product");return; }
+            
             if(this.txtCustomerId.Text==""|| this.txtCustomerName.Text == ""|| this.txtCustomerPhoneNumber.Text == ""|| this.txtCustomerAddress.Text == "")
             {
                 MessageBox.Show("Fill the customer info");return;

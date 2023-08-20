@@ -34,3 +34,21 @@ D:\CS project 2\TechShopManagement\TechShopManagement\obj\Debug\TechShopManageme
 D:\CS project 2\TechShopManagement\TechShopManagement\obj\Debug\TechShopManagement.csproj.CoreCompileInputs.cache
 D:\CS project 2\TechShopManagement\TechShopManagement\obj\Debug\TechShopManagement.exe
 D:\CS project 2\TechShopManagement\TechShopManagement\obj\Debug\TechShopManagement.pdb
+D:\Shop-Management\TechShopManagement\bin\Debug\TechShopManagement.exe.config
+D:\Shop-Management\TechShopManagement\bin\Debug\TechShopManagement.exe
+D:\Shop-Management\TechShopManagement\bin\Debug\TechShopManagement.pdb
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.csproj.AssemblyReference.cache
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.csproj.SuggestedBindingRedirects.cache
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.Admin.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.Login.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.ControlAdminCustomer.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.ControlAdminEmployee.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.ControlAdminProduct.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.ProductManager.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.Properties.Resources.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.Revenue.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.Seller.resources
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.csproj.GenerateResource.cache
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.csproj.CoreCompileInputs.cache
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.exe
+D:\Shop-Management\TechShopManagement\obj\Debug\TechShopManagement.pdb

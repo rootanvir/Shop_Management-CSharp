@@ -234,6 +234,7 @@
             // cbmSearchP
             // 
             this.cbmSearchP.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.cbmSearchP.Enabled = false;
             this.cbmSearchP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.cbmSearchP.FormattingEnabled = true;
             this.cbmSearchP.Items.AddRange(new object[] {
